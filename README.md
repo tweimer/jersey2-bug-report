@@ -19,7 +19,7 @@ This example was compiled with JDK 1.8.232 on Windows 10, but the same problem a
 
 To reproduce the problem, you can use those bat files on windows (or rum the equivalent commands in the command line on any other operating system):
  * startTestWebservice_javac.bat will start the webservice with the compiled classes from javac (in /runtime/classes_javac), which **doesn't** work
- * startTestWebservice_javac_repackaged.bat start the webservice with the repackaged classes from above (in /runtime/classes_javac_repackaged), which **doesn't** work
+ * startTestWebservice_javac_repackaged.bat start the webservice with the repackaged classes from above (in /runtime/classes_javac_repackaged), which **does** work
  * startTestWebservice_maven.bat start the webservice with the class created by maven (./target/Jersey2-0.0.1.jar), which **does** work.
 
 To test it, you can make a GET request to http://localhost:12345/foo/bar. On success you will get a response OK with text `foo bar content...`
